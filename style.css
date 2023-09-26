@@ -14,12 +14,13 @@ body {
   align-items: center;
   justify-content: center;
   margin: 50%;
+  padding: 5px 0px;
   /* margin 50% för att flytta till mitten*/
 }
 .box {
   height: 175px;
   width: 175px;
-  margin: 10px 0px 5px 0px;
+  margin: 5px 0px;
 }
 .red {
   background-color: red;
@@ -32,4 +33,30 @@ body {
 .green {
   background-color: green;
   border: 10px solid rgb(35, 90, 35);
+}
+
+/* styling för traffikljus 2 */
+
+.bling1 {
+  background-color: rgb(243, 138, 138);
+  height: 50%;
+  width: 100%;
+  position: relative;
+  top: 50%;
+}
+
+.bling2 {
+  background-color: rgb(241, 241, 164);
+  height: 50%;
+  width: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+}
+.bling3 {
+  background-color: rgb(125, 212, 125);
+  height: 50%;
+  width: 50%;
+  position: relative;
+  top: 50%;
 }
