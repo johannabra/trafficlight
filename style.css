@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   height: 550px;
   width: 200px;
   display: flex;
@@ -22,8 +22,9 @@ body {
   width: 175px;
   margin: 5px 0px;
 }
+/*
 .red {
-  background-color: red;
+  background-color: rgb(255, 0, 0);
   border: 10px solid rgb(114, 18, 18);
 }
 .yellow {
@@ -33,7 +34,7 @@ body {
 .green {
   background-color: green;
   border: 10px solid rgb(35, 90, 35);
-}
+}*/
 
 /* styling för traffikljus 2 */
 
@@ -53,10 +54,92 @@ body {
   left: 50%;
   top: 50%;
 }
+
 .bling3 {
   background-color: rgb(125, 212, 125);
   height: 50%;
   width: 50%;
   position: relative;
   top: 50%;
+}
+/*länkar*/
+.red {
+  background-color: rgb(252, 3, 3);
+  border: 10px solid rgb(114, 18, 18);
+}
+.yellow {
+  background-color: yellow;
+  border: 10px solid rgb(209, 165, 54);
+}
+.green {
+  background-color: green;
+  border: 10px solid rgb(35, 90, 35);
+}
+.redimation,
+.yellowmation,
+.greenmation {
+  opacity: 20%;
+  animation-duration: 9s;
+  animation-delay: none;
+  animation-iteration-count: infinite;
+}
+
+.redimation {
+  animation-name: pulsred;
+  animation-delay: 0s;
+}
+.yellowmation {
+  animation-name: pulsyellow;
+  animation-delay: 3s;
+}
+
+.greenmation {
+  animation-name: pulsgreen;
+  animation-delay: 6s;
+}
+
+@keyframes pulsred {
+  0% {
+    opacity: 20%;
+  }
+
+  50% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 20%;
+  }
+  100% {
+    opacity: 20%;
+  }
+}
+@keyframes pulsyellow {
+  0% {
+    opacity: 20%;
+  }
+
+  50% {
+    opacity: 20%;
+  }
+  75% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 20%;
+  }
+}
+@keyframes pulsgreen {
+  0% {
+    opacity: 100%;
+  }
+
+  50% {
+    opacity: 20%;
+  }
+  75% {
+    opacity: 20%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
